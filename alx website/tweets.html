@@ -1,0 +1,62 @@
+<!-------------------------
+
+developed by Fanuel Almaw
+for ALX level 3 challenge 
+this site is the index or home website that users can know about ALX -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>ALX PROJECT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://alx-apply.hbtn.io/level2/school.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylessheet" href="homeStyle.css">
+    <link rel="stylessheet" href="tweet.css">
+    <script src="behavior.js"></script>
+</head>
+<body class="works_on_smartphone">
+    <div class="menuContainer">
+        
+    <nav>
+<div class="logo">
+        <img src="https://alx-apply.hbtn.io/brand_alx/alx-logo.png" alt="alx-logo"></div>
+<ul>
+    <li><a href="index.html" >HOME</a></li>
+    <li><a href="student.html">STUDENT</a></li>
+    <li><a href="problemReport.html">PROBLEMS</a></li>
+    <li><a href="tweets.html" id="active">TWEETS</a></li>
+    <button onclick="loginPopup()" id="account">LOGIN</button>
+    <button onclick="regPopup()" id="account">REGISTER</button>
+    <button class="accounts">ACCOUNT</button>
+</ul>
+</nav>
+</div>
+<!-----------------login and reg popups----------------------->
+<div id="regPop">
+    <h1> Register</h1><span class="regcls" onclick="clspopup()">&#10006</span>
+    <input type="text" placeholder="Full name">
+    <input type="email" placeholder="Email address">
+    <input type="text" placeholder="Education Level">
+    <input type="date" placeholder=" birth of date">
+    <input type="password" placeholder="Password">
+    <input type="submit" value="REGISTER">
+</div>
+<div id="loginPop">
+    <h1> Login</h1><span class="regcls" onclick="clspopup()">&#10006</span>
+    <input type="email" placeholder="Email address">
+    <input type="password" placeholder="Password">
+    <input type="submit" value="LOGIN">
+</div>
+<div class="tweet">
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Just been accepted into ALX software Engineering programme.<a href="https://twitter.com/hashtag/IAmALX?src=hash&amp;ref_src=twsrc%5Etfw">#IAmALX</a> <a href="https://twitter.com/alx_africa?ref_src=twsrc%5Etfw">@alx_africa</a> <a href="https://twitter.com/FeyBrown4?ref_src=twsrc%5Etfw">@FeyBrown4</a> <a href="https://twitter.com/TechalabHQ?ref_src=twsrc%5Etfw">@TechalabHQ</a> <a href="https://twitter.com/techphc?ref_src=twsrc%5Etfw">@techphc</a> <a href="https://t.co/UpuTeoVxM2">pic.twitter.com/UpuTeoVxM2</a></p>&mdash; AZUBUIKE GOLDEN (@golddon88) <a href="https://twitter.com/golddon88/status/1383495193807048711?ref_src=twsrc%5Etfw">April 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Fast growing population.<br>Limited Time.<br>Requires unconventional thinking.<a href="https://t.co/SEYT2nY7jm">https://t.co/SEYT2nY7jm</a> <a href="https://twitter.com/hashtag/AfricaToTheWorld?src=hash&amp;ref_src=twsrc%5Etfw">#AfricaToTheWorld</a> <a href="https://twitter.com/hashtag/ALX?src=hash&amp;ref_src=twsrc%5Etfw">#ALX</a> <a href="https://twitter.com/hashtag/Africa?src=hash&amp;ref_src=twsrc%5Etfw">#Africa</a> <a href="https://twitter.com/hashtag/YoungLeader?src=hash&amp;ref_src=twsrc%5Etfw">#YoungLeader</a> <a href="https://t.co/kpQj9SnmRD">pic.twitter.com/kpQj9SnmRD</a></p>&mdash; ALX (@alx_africa) <a href="https://twitter.com/alx_africa/status/1387783946944008192?ref_src=twsrc%5Etfw">April 29, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div class="supportcenter">
+    <div id="chat"><p>what can I help you?</p><span class="chatcls" onclick="clschat()">&#10006</span><textarea type="text" cols="32" rows="4" placeholder="Feel free to ask" autofocus></textarea></div>
+<img onclick="supportMe()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEX///9BQELz8/P+/v709PT9/f319fX8/Pz4+Pg2NTcyMTOhoaI8Oz07Ojzk5OTAwMHr6+u4uLibmpsrKi3a2tovLjDLy8tHRkisrK15eXrR0dFXVliQkJFPTlDFxcXV1dWHh4hjYmR9fH1MS0ynpqdfXmBxcXImJCeMjI1VVFVpaWocGh79wFdCAAAV/klEQVR4nNVdCXurKhM2GgWNGo0xe7M1zWlz////+2RzARFwafrN89x7bDsIrwzMMAyDZRFyHOHBkj1Mzzvu6zABQH50ag/kL2714Kp5XTmvJeFlLCa8Js2kP0HyawdC8msXAvYX8WFkXtoixlLyjlM1fbkHaEmP/Nr1WC0ebLLUeR3Ga0l5aYuE1wH+dZa8aoG3XrWymfitcE5/8uakFjCnrwA2K8kePMY7nzMWj2OBNmjyumresmpXo2qTZmKZZd+oaLS6pM3zskYDEaBtAlDJK1Y9F6vmebHMMsmtPqM9KkCN3nY0PobH9zbQaCaWYofOPc7cFgB2fEa1iJo02qTqitdSASSySLVGvVfMe7AXwBYR1fm22s0sq+ZKagj3/8kYZLy0FiMR7TEG55TFovN7bQIvq+4lzpoAuxo9xhgs1BO01+d091itHo9del4nCZQ2ute3lTWT1jJETagBJofF/TbL8iDwCQVBns1u18chKU0PQxHVbqaL/nHgNHrQQWMFHFa3We5H4YynMPLz2ddp404KEGmKylQbeQx6wN3cw8AXwdVg+kF43xSFjNSEfj9QjW+iJrTHoAXXpzCPOtAxivLwe21J3jtITRBz1QFsthtVTVjLZ+BrwCPkB8+NJkCjZuK/UI0/sql2PgY63VfryOC4KWZcWdWDLEpWUuPT6Iro4ZgLgy+MomISLeZT9F8x84gM+XEjrdrEVOObyX4aT00k94xrfjFrRsfndZGeD5vN4bBJF9/PY1TMsBzG7J6oqu7Zg6OOwUfYHH9+Fu4Xm5gwA4/5GJLk8tiHOccb7qr3DhyDlBd/EkOLtxNg8hU0ei+fnS6gdDbUzC9cIzicZs35NviKLYF3wBjEGt/1xlMTaX0AhsHseqm/V2g0WqFerrOgXihP9b+tspnYHVV5fgaLKLjm9e742dmtH4NfTdi7n/qHya9gLBGlGh+MBdA+1kZVsE1B83XyFb1lp5814faPNuizohfnQuyfcYDF/Vqj71sBXmbViPJnO7lroXVc7WbV54lmB4tWbTQGZSOpf8kGwHNlgIb+NQESXumKHn7XX3CmVfcw1XoA1BLRtBqC/vEA+NdprOitzU/VjflyNMeDBLcpwGUF8N83FMyvGq98Re+C73/VOF5ag9QED3CoiC6zUsDCszWXfS+L7S7IlkvnyprLUyAf/vrNdEw/TTvATTkT+j+xJfKiX9jxZblbrFaLx255WcdW+3vjn3K6CjaMZYBFSX3eQ8dgXAG8QRGgZR92969tYXIzL0bub7/uuwuwIF81SG7lYPTRZxg2BrEqdIVaTAHOP5loBXvL4QHO0+fMF90YYeQHs+fO46t2rT37XuGn128MVsJDNb68pNYYdF5MsIJrtb4hvHD5zAK5GyP0s+cZ8mbdlUH0Xxo92OWSbWj8/sb2ijVIAJgstko/RpRvF7yxfWeCGpyAUHWPqWIgwA2bRv1nE6B9CvX8GH54sutVW/DFCuYHY4BiM6Ul9VYTHuuk6Oa4dd22MPLTLEDdCwlu7K0hVAFUNnMgwFKiwk+7mmQ897wNpHjaKPhcsi1s1Cs2m7z8e98xOJKIVpowX1dqAoqODCWF+X1eq3rNbKRCKw4SUWcgQPBBkWS7EiAAm62+gFbkbw+1lceOQgw/BgFsavweXrUF7UJ/XwGEq3+mHUjB/FtYpdsQPOlQDBZygMpmYn0oOlH0N19sJkvbxGMAk73ZCKxTfrfpW+Yw2dJfBk1PgUkzIR7bQAlQ7vj9ptIYpLAEeOsjoYz8l0cAFv+kTD5OegBbmok9e47bH2DM5tEXA+jGn2a+bp6iD7tcLr3YfJoMcd8y6rX5cqUIszVkALf9hmAN4mfChnRMbYmiE/uoCSlA/c2XmDXqTt8Camuf/hCPCVuT3Nnb4v5TxQCADliwUVgu9r6GA0QrMLY3xlZl/mNAP/Al9ffoPfuT1n+iLOA5ZJKpQdyzRp/IC8MPt28zubg2oz16uKGqIoopwFV/NdGkfEF7JaYykW/6ApTEtWnFyVh7Uj0dhRCex+lBRP6Bzi21OnqNpGZcm1mcjAXoTBfgBQ70ksHTaEXhls42ByoWGYA9ALpcXJthnMySVB5+EBZnP14XsqFYNIauMQqTwlxNuNK4NuWnwbVQAfIXmMU9Z10tNqYMO9ogXJHvFlHEvULqjAGS3obUbMxiXAsYUUYRhZ8urppp/U/Yrx/6AKQl15WQos+4GlNGERWygbuHiena6jGS6gCNS1J1768wbzJuD2KK8aqOfjqk9M3G4MAeLIdhfnAR72nsLiwNCap1i4HYq5lcXJtBOOWcLu6jBMVV2uMDLCDidSF9dfgDvR7NZHFt5n3vUj9KeLNrojQywhWu+kYHYtyjmSyurU/JZR6iCKB/V/zzWOYaBxFVDa7/ArQpkJ8t82Y249oMhBvYYJEd96dHekAhPkz5j0053kKcr5eP0/6YPXo0k6iYPgA9i/yOGhqvCWbSGXIdWKXDxQO2cQ/yYV/mJRnvFKqCQIyVAcTGAI2i7umiy1qPse5tI7ouK89ETQpQNAocYB8eKOQJrqfqQ4Lwsth4A5qJcff5NPbuVkylS+Syi6dFmBaT6S2F4t6rTjMBjWszLpmcfLTxGSzRsiKeUkpdiPymYRCd6KA0A0jj2lR9z5d0WIRlsEThWVMidOaQ6iI/fBg2s9T4QAWQF+64jLAkC9MpEc7nlbYNvhKzMSjZ5VZ+mk218RLgSMnJEIaxVzkT0M9ZfatNW5uZAqyFd6FxOCnCNVITdYsp37mazeQB6gt3WrfQJkeIXr8Ua5wS4KXhjiH1Tazxm1ZvfpkW4Ly5TEIInak1fhNhGHlGAPm4NlXJfbO7CoTO9Bq/uXLx764BQD6uTTX/brhlEg6RnFRbFCotFSp1FM2sAeTi2lSfxj2GfGWFSTMpwsKi4Fef4Zej24PNXW4N4V7mXBMm1/jIFhXW19lZFyDR+PoKxhFWutNrfK/FgxA9NQEySO0AWyL0Y8FxP7k+RG0VfSRZojMGvW6ALZ8G7gSP2sQII1Hjk2pToO5Bc4C29RSQUI3/m/oQ//4JxhdRVFJsAkLoer+OcLa1tAE62j0IrUQUxgKha8NpNb7D60P0h0RTRJu73KrpaS06tguEc29ajQ8FjV+Qv9brQac9rk1W8iDWVGj8gndKhFDU+DOys66VcgP781vi2tpL8ibbDGt8Z1KNj0zmdoRaaW9a49rkn6atDyfW+GtkMrcjNEh7owvQOrSOw2kRoka1IPQvUD8rjDZA2D7TTIlQpvGLPyi32iQAu2ygORSVAkbo/r4+DCcQUfRpvgQkCCGYWuOL2iL8spQA6YZxM65NNf8u2uzSYrabbu8JKXYgIvQXuiLq8nFt3cJ9aVtbIN7bRPuHN6td42drFUAmlI3sLRo20Ke4PsThzy1WxxiEdBG0HWEchp8qEWWHTxtxbTpWrCCmATmR7k6E0MFVCwiDnUpEGaR6XJuWkRcLbSD5D6YIp8EBNbhqcS619cZgj6io8gBJiZB4oMGad+CMQXlCquYRBg89EbXrAHVT/4Gf5kgkCIvF8fcEMVHf1C/KIQx/gB5ATw9g1YPzlukUI0S8E5g1hVFKquYQZhc9EaUAHU0RLeffRUMeEULCO/pI9E9s0dOcqfOFlppgAElcm6dvAzmwEQqMd7kxrze2SgzLvBPN3a6rkYjy2Vt05l+rfnArWLqMNx13sqFZaorWw7qUBveWuArBVKsAasa1cfPvtRqLhcYv/eevMYdi9GIA7fo4zL47AkdaUm60x7V1CTcpuSsPiAZpuX52R7VOsUVKu6dEGGa77mY2FH0V12ZJAHbMv5cvesae6kPCK+xq9Ke88V4ab41SSBmNQc24trZ8MsBKP/BBe4qQ1jLamZngVG89QRj+pCamWm1XVB9gY8YFKFmCT7516T+/jTMU/VejewjCbWLaD909KLeBahs16ffnss4Lk48xIEYfsNGGJRoR4RH2E1FHG6DoGBG9kFYirK/MKfxMGu91HWRNhK9+zVTGtZkmMR5+hjTcxk2Ac3yqO9q3pL3pENH6LrcjZG+RqgklQHSudBjEaMYDnFvoWED0DfRNtdqOINb4gCupJaISgAXEj0FnuX84EUWH5NAL/V2fZnbHtbXNv0qAhXh4z/5KI3g2JxksPPj8UXAY0ExpSWMRpSmPTn2PsWWn5ntJ1SkWiqR/M2UlDcYgb/Eu+cykWhQ1LCSrXNWhKKXwKG2m0s0ka/SQZP5W/DK34IJX0nwvyxuJjgGSQ1C9min7NEOT+aeG6U387c5qBWid0TDEuYZM1IQirq2PmuDTjtknrVTXhKL8m88VVVaN0w7kfftBkr3FRETlqf/ifaaZJyq/x9KN6AS9I7r2FFFI4tp482ukZP6elXzPOlKZEQqDWdF/0lAC4gDKLlores24tlHvm0h2t7wj7Xzo57edbbH4n5ZTgLgLi5lUS03wY9BrjWsb/c6X9eOWtaEM/SC7PeJa1S3bmAB3YZA6JqZae1TUUDUhBYjPfW9Wr1nko7SJEUpcXjxF29vqDBuNbjs/iPedww97PmCq4D/NNHe+FKM9uZx3q9P1ej2tdudLwnaEugDOiXvL3/EhsCYWpRTg8DFotYidxvmVWtXuI5g1s32Z94NQi2xFb6ImjGZc+Ri0wQXb8NlZPtmrm+k2P02PMdjWaPIQn2niLuWugbOJobhPCxJswfssg1GvqYKLa+sjorIePOzz7AdntezMZYH8AoufPH9uRIDYJcKcGkamWuU6wivg8lay4aZaybt5ofstQt9/PdblfX1ibwO30CU+UiVR8GrGqoGYuLWqhaG5mmBxbS4rOYapRqIYb6UpU4Dc3tN16+vgeh9VmjLKbpdyj2jurknO5GynrlreD43sLf1W9G0TR3LnsgpGwb9/i/YxeHgFTP37X6cNq9oDKVlF5yseoNpUEz0rtOQ4IuoK91ugyeIrFjNgU7FbztDlT6/vNK72iEBMN7jyU4O3XzNpyZFMtdrpyxrAp2vJ1cR6t0nwH0udCVmO/UwAKG6+aAMcsKKvrSbAQ7xgBu2UlYeUxes0mbO2+rbpB/1IOZ+mrZfzj5Qcx1SD7c6LrU170E7iOE4w4QfPEi0ZO/2gHymaLVkb5Kaa0sbQjmvTGYNgM2tb1QcpAXh4bv0mfZyS6twEhru5lwvK4MbSDQwxmUlcW3Ur2SBTDTzaF4IRmWQeolMj9EOq7JC5GqfPbXlJVJQ9xliXc3Ftg1b0wLu3e0n9E3bHp61/DbPEhV682X1/5Vnlgoz8u859OupmNna5h91eB5KXxCcT4FUglGxKhR/HbZA179bzg/ulw/FgbOer49p0AMZfMqdThnvjIHWDc8jDwD/FDn/m08hUE6YKUnLQip7ZkK19iHnEQ2FtYKPAfy5Bq3ezxxhsbAIPM9VA15aaHkJ0U0J0vOL1Fqv6/BWPYVHSkkPURNGDHS7DDC1+3LPMyx+i2y6y6HhfLWlmD1r1+pn7R5sCHKDNHN2S8uv5QNKZWhelHgVzWzLTRK/FbnlJCgOnefdOfEcza/QF9TZf5PYIjWsbdpPysdN7j+NgYe0imkYPBonFVw3Q6jKjaSe/HGuYf1oR16ZjqnkyNVF2E7kLeJeJH8JnN1fVWgTjxUeVlN/fMwPWUE1QXkVcm46pBq+qWTLYkfdf9tG/rE7/tif+Ph1vs7o1r2ZlwUO91ASgu9zDTDWNLW2bfk/ozREliY3/9dhbiDfFOzzQhTT8eCVBir3UxBh3WkGdvKzRC1h1t6HH3Ca00fZhuVs9Z/8kGxxo63CYRaldUhwImhkx/CfocPyuZ+iWpI7dm0IGOjZf1CNJBbBjRT8HmhnK/eOaP8dZAkzFO1c5il7y3JVj9GCHV00/5WUYXMmkwrQey0d4aHF6CBSs1M2UjkFH/9MIAJ2WY7PyjsiOp0e62+1STPjfxXXW4vRog3jo3YPat5K1eNWAZxbDFvoC6W70hyhasZ9F2R7Xpun4vU9xFKid/GvfyR5rfCAt2bn5MnIC727KNvIbrbtCCYjG1yjZ0oOGMjqQwk+7B0BuC9Fw82WS42pyIkmF++3TykoqNl+mOXLYATHuBNixT9uj79HDSEHr+oTOmJg3UwOgpO/bl3uTUrZx+4hoM65NP07mV6cZQuFHy91iyh6U3UrWsaInjqXfHoWIAn6zVG6qqeLalHv08626PeNTSG6AMOlB1a1kUuHWWfZOQLgTjcJ52m8lU8fJwLfgK2gLjERUEtem0fdi9ohfomAHDJqpBihdVv+2KqyRzsVNmgDlvjvwlomUED2XaBJSxwPUiFWDP7+vCxmRQwk6phoX1ya9lawN4Pl9XUhW+yYiKruVrKvv+TS0v0vR3Szqk4tr0+l7pyXz3q9CTKDGXNiIa6tuJVOZaqTk21QFIX8B9UVUeitZ16dxuvYKf4HoVYg6AGVXPimEW8yk9MtEMyhpRV4rwr7aS17fOwxRUhdLy1TjAOrPv1Ok2jGE2EdEPbUlQ0uauLknomBjGYgodyuZepv1/m4hRae8gAFAeiuZtg3kvWXpyxFznWoc7xB2uZUnX/6AkBZielE0U5a9RUO4wS+7gduJOIe1AhbwX1hcm44NZIu5Id9AIbrz2eSATvOnThsoeb+uQBQkWmOQB6ixUT5VfkRTQlHH6jHYBKipYN5u0BCKrvItT0FEaVybZrjRu6Ex2ursCJK/YI1fZm9Rzb/Ju61uRv+SrmbWAfJxbYq+n+iqSnNi6RrV+xh0l1s3GudPaENEWCNqAGzucmvMv/wtM28jlClZQ000txA1bCD4N2ZSRKGrMQZ1AVbna1pysr+L/It6L9EYoHjv0hspWPL7SUMAlsdWJ7m4uR/53MFLg1vJuvr+ra7gJkV7XYDacW2o5J9YWBAiaec1RJS/lawToP0X1veM0DpfQ03w2Vu659/47wxDHD+kIaIGcW3on8vfWBwSyi9QLaLacW205B9SFuxKu6EAub5/85ZMk+j9D+qUG1KALUvl77+jLFj+NpNbyTTWIX9IHeKdUk0RdXQB2lC4/PCdFD41Acri2lr63v1DCh+pfFdLRNtvJWv/NODj3aga9AF0elAV19bwob4t1KudttBTA5TEtUk+jfeXlEUxmSbKO63Ks5lNgFLh9v6SSYMuMLFam9kAqBe4x0ra/4lnXt5I/9ljASzXjslpQWi14h5W1YOMpSdvB8vK6wtQKtxzyluePmMzFDuGVjw4PAsUWJgeNuKVVa0BUBXXJi+pdYNkv1wWKl79W3HkcW3y8zUDAfY5S63h+JU3sxnXNg7ArmhqnQOSpplLOgEa30pmBLBH2jGTOBmtZsri2gYA/IUkmubNnAag3WMMGoRymQMsU2OwdYaYdow9aPA67My9K/DCLt4Rqq6yXjFeUpJtIZaeRVCmc2QPLP2mBq9TpuostyYFXljxjlm1yEt+YluILlOl5QOoHlwJr5zFkNe8ah1et/p/7cFxHeGBYzHhbWNxDF5nwis00/kfiNrSa30GcB4AAAAASUVORK5CYII=">
+</div>
+<div id="bgCover" onclick="clspopup()"></div>
+<footer>Made by Fanuel Almaw for &nbsp;  
+    <a href="https://alx-apply.hbtn.io" target="_blank">ALX</a>&nbsp; &#169; 2021</footer>
+</body>
+</html>

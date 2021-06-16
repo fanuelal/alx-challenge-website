@@ -1,0 +1,116 @@
+.reportForm{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 20%;
+}
+h2{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 12%;
+    margin-left: 12%;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width:400px;
+    height: 200px;
+    margin-left: 70%;
+    background: #fff;
+    border-radius: 10px;
+    padding-top: 80px;
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.5);
+
+}
+input[type=text],input[type=email]{
+    margin-top: 20px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(122, 121, 121);  
+    width: 70%;
+    outline: none;
+    font-size: 15px;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
+input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  input[type=file]{
+      color:transparent;
+  }
+input[type=file]::before {
+    content: 'Attach Photo';
+    color: black;
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, rgb(155, 76, 76));
+    border: 2px solid rgb(155, 76, 76);
+    border-radius: 10px;
+    outline: none;
+    white-space: nowrap;
+    padding-top: 30px;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+    margin-top: 20px;
+    width: 250px;
+    height: 80px;
+    text-align: center;
+    color: rgb(155, 76, 76);
+    z-index: 999;
+  }
+.attach{
+    color: rgb(155, 76, 76);
+    margin-left: -60px; 
+    font-size: 30px;
+}
+textarea{
+    resize: none;
+    width: 70%;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: solid 2px rgb(155, 76, 76);
+    outline: none;
+    background: whitesmoke;
+}
+input[type=submit]{
+    background: none;
+    border: 2px solid rgb(155, 76, 76);
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    position: relative;
+    font-weight: bold;
+    color:rgb(155, 76, 76);
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    color: white;
+    background-color:rgb(197, 66, 66) ;
+    transition: all 0.5s;
+}
+.fullName:focus {
+    background: white;
+    box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.5);
+    border-bottom: 3px solid rgb(155, 76, 76);
+}
+.email:focus {
+    background: white;
+    box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.5);
+    border-bottom: 3px solid rgb(155, 76, 76);
+}
+.address:focus{
+    background: white;
+    box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.5);
+    border-bottom: 3px solid rgb(155, 76, 76);
+}
+.descrip:focus{
+    background: white;
+    box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.5);
+    border-bottom: 2px solid rgb(155, 76, 76);
+}

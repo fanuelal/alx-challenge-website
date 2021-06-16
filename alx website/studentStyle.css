@@ -1,0 +1,177 @@
+body{
+    background: #fff;
+}
+.title{
+   text-align: center;
+   
+}
+.listHeader{
+    padding-left: 30px;
+    padding-top: 30px;
+    width: 900px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    text-align: center;
+}
+.listHeader p{
+    width: 350px;
+    text-transform: uppercase;
+}
+.main_containt{
+ display: flex;
+ margin-left: 60px;
+}
+.studentList{
+    margin-top: 5px;  
+    padding-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: 50px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.5);
+    color: rgb(105, 105, 105);
+    cursor: pointer;
+   text-transform: uppercase;
+   font-size: 13px;
+   
+}
+.studentList:hover{
+    background: rgba(0,0,0,0.05);
+    transition: all 0.7s;
+}
+.studentList button{
+    background: #fff;
+    border: none;
+    color: rgb(105, 105, 105);
+    margin-top: -20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: rgb(155, 76, 76);
+}
+.studentList:hover button{
+    font-size: 20px;
+    transition: all 0.5s;
+}
+#bgCover{
+    width:100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    margin:0;
+    position: fixed;
+    display: none;
+}
+.name{
+    width: 300px;
+}
+.fild{
+    position: relative;
+    padding-left: 100px;
+    width: 400px;
+}
+
+.projectName{
+    width: 400px;
+}
+.topProject{
+    margin-left: 80%;
+    margin-top: 150px;
+    position: fixed;
+    padding-left: 0;
+    background: rgba(100,0,0,0.5);
+    width: 300px;
+    height: 400px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+}
+.topProject h1{
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 50px
+}
+.topProject p{
+    padding-left:10px;
+    display: flex;
+}
+.topProject p:last-child{
+    padding-left:30px;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+#studentDetail{
+    margin: 15% 20%;
+    padding-left: 20px;
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    display: none;
+    background: rgba(100, 78, 78, 0.95);
+    color: white;
+    border-radius: 10px;
+    z-index: 99999;   
+
+}
+#studentDetail h1{
+    font-size: 25px;
+    margin-left: 15%;
+}
+#studentDetail p{
+font-size: 15px; }
+.profileImag{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -5%;
+    margin-left:40%;
+    position: absolute;
+}#studentDetail span{
+    position: absolute;
+    margin: 10px 94%;
+    font-weight: 500;
+    cursor: pointer;
+    display: block;
+}
+.facebookProfile{
+    margin-left: 200px;
+    margin-top: 0px;
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 200px;
+    height: 20px;
+    background: none;
+    border-radius: 10px;
+    border: solid 2px rgb(58, 55, 55);
+    text-decoration: none;
+    color: white;
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+}
+.facebookProfile:hover{
+    border: solid 2px #3B5998;
+    background:#3B5998;
+}
+.profileImag:hover{
+    height: 300px;
+    width: 300px;
+    transition: all 0.3s;
+    margin: -90px 180px;
+}
+
+.supportcenter img{
+    margin-top: 580px;
+}
+#chat{
+    top: 54%;
+}
